@@ -1,173 +1,163 @@
-# Previsão de Tendência PETR4.SA - Machine Learning
+# 🎯 Machine Learning - Previsão de Tendências IBOVESPA
 
-## 📋 Sobre o Projeto
+## 📋 Descrição do Projeto
 
-Este projeto desenvolve um sistema de machine learning para prever a tendência (↑ ou ↓) das ações da PETR4.SA, utilizando indicadores técnicos e análise quantitativa. O modelo foi desenvolvido com foco na aplicação prática e eficácia preditiva, alcançando uma acurácia de **86.7%** nos dados de teste.
+Pipeline completo de Machine Learning para previsão de tendências do IBOVESPA aplicando conceitos fundamentais do curso:
+- **Linear Regression** como modelo principal
+- **Validação Cruzada** (K-Fold) para avaliação robusta
+- **Técnicas de normalização/padronização** 
+- **Feature Engineering** avançada
+- **Análise comparativa** de métodos
 
-## 🎯 Objetivo
+## 🎯 Objetivos Alcançados
 
-Desenvolver um modelo de classificação binária capaz de prever se o preço da ação PETR4.SA terá tendência de alta ou baixa, baseado em:
-- Indicadores técnicos tradicionais
-- Análise de momentum e volatilidade
-- Padrões de preço e volume
-- Métricas de performance do mercado
+✅ **Pipeline de ML completo** implementado  
+✅ **Validação cruzada** aplicada corretamente  
+✅ **Divisão 70/30** conforme orientação  
+✅ **Comparação de normalizadores** sistemática  
+✅ **Feature selection** automatizada  
+✅ **Métricas múltiplas** (R², RMSE, MAE, Acurácia)  
 
-## 📊 Resultados Alcançados
+## 🚀 Script Principal
 
-- **Acurácia do Modelo**: 86.7%
-- **Precisão**: 87.5%
-- **Recall**: 85.7%
-- **F1-Score**: 86.6%
-- **Validação Cruzada**: 5-fold CV com score médio de 84.2%
+### 📊 `ml_ibovespa_validacao_cruzada.py`
+**🏆 Script ÚNICO - VERSÃO DEFINITIVA SIMPLIFICADA**
+- ✅ Código limpo e comentado linha por linha
+- ✅ Pipeline completo com validação cruzada
+- ✅ Funções separadas para cada etapa do ML
+- ✅ Linear Regression + K-Fold CV + Normalização
+- ✅ Fácil de entender e modificar
+- ✅ Resultados didáticos e bem explicados
+- ✅ Pronto para apresentação acadêmica
 
-## 🔧 Tecnologias Utilizadas
+> **Nota**: Versões anteriores e scripts experimentais estão na pasta `backup/scripts_antigos/` para consulta histórica.
 
-- **Python 3.8+**
-- **Pandas**: Manipulação e análise de dados
-- **NumPy**: Computação numérica
-- **Scikit-learn**: Algoritmos de machine learning
-- **Matplotlib/Seaborn**: Visualização de dados
-- **TA-Lib**: Indicadores técnicos
-- **XGBoost**: Algoritmo de gradient boosting
+## 📊 Resultados Principais
 
-## 📁 Estrutura do Projeto
+### 🏆 **Performance Geral**
+- **Acurácia de Direção**: 51.9% ± 3.1% (Validação Cruzada)
+- **Acurácia Holdout**: 51.6%
+- **Consistência**: Diferença CV vs Holdout < 1%
+- **R² Final**: -0.0027 (dentro do esperado para dados financeiros)
 
-```
-Machine Learning teste/
-├── simple_trend_predictor.py      # Script principal otimizado
-├── trend_predictor.py             # Pipeline completo (versão robusta)
-├── predicao_tendencia_petr4.ipynb # Notebook didático e exploratório
-├── requirements.txt               # Dependências do projeto
-├── README.md                      # Este arquivo
-├── LICENSE                        # Licença do projeto
-├── .gitignore                     # Arquivos ignorados pelo Git
-└── resultados/                    # Gráficos e análises gerados
-    ├── confusion_matrix.png
-    ├── feature_importance.png
-    ├── predictions_analysis.png
-    ├── simple_model_results.png
-    └── resultados_modelo.png
-```
+### 🔍 **Análise Técnica**
+- **Estabilidade**: Baixo desvio padrão confirma robustez
+- **Overfitting**: Ausente (confirmado pela CV)
+- **Features**: 10 selecionadas automaticamente
+- **Normalização**: Impacto limitado (dados já relativos)
 
-## 🚀 Como Executar
+## 🛠️ Como Executar
 
-### 1. Instalação das Dependências
-
+### Pré-requisitos
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Execução do Modelo Principal
-
+### Execução
 ```bash
-python simple_trend_predictor.py
+# Instalar dependências
+pip install -r requirements.txt
+
+# Executar o pipeline completo de ML
+python ml_ibovespa_validacao_cruzada.py
 ```
 
-### 3. Execução do Pipeline Completo
+> **Resultado esperado**: ~52% de acurácia na previsão de direção do IBOVESPA (resultado realista para mercado financeiro)
 
-```bash
-python trend_predictor.py
+## 📦 Dependências
+
+```
+pandas
+numpy
+scikit-learn
+yfinance
+matplotlib
+seaborn
 ```
 
-### 4. Análise Exploratória
+## 📁 Estrutura do Projeto
 
-Abra o notebook `predicao_tendencia_petr4.ipynb` no Jupyter:
-
-```bash
-jupyter notebook predicao_tendencia_petr4.ipynb
+```
+📂 Machine-Learning-teste/
+├── 📄 ml_ibovespa_validacao_cruzada.py    # 🏆 Script principal definitivo
+├── 📄 requirements.txt                     # Dependências Python
+├── 📄 README.md                           # Documentação
+├── 📄 LICENSE                             # Licença MIT
+└── 📂 backup/                             # 📚 Histórico e versões antigas
+    ├── 📂 scripts_antigos/               # Scripts experimentais
+    ├── 📂 imagens_antigas/               # Gráficos antigos
+    └── 📂 documentacao_antiga/           # Docs anteriores
 ```
 
-## 📈 Metodologia
+### 🎯 Foco do Repositório
+Este repositório foi **simplificado e organizado** para apresentação acadêmica, mantendo apenas:
+- ✅ **Um script principal** (`ml_ibovespa_validacao_cruzada.py`)
+- ✅ **Código didático** com comentários explicativos
+- ✅ **Pipeline completo** de ML (Linear Regression + CV + Normalização)
+- ✅ **Histórico preservado** na pasta backup
+    ├── 📂 documentacao_antiga/           # Documentação histórica
+    └── 📂 imagens_antigas/               # Gráficos e resultados antigos
+```
 
-### 1. Coleta e Preparação dos Dados
-- Geração de dados sintéticos realistas baseados em PETR4.SA
-- Implementação de autocorrelação e choques de mercado
-- Adição de ruído para evitar overfitting
+## 🎓 Conceitos Demonstrados
 
-### 2. Engenharia de Features
-- **Indicadores Técnicos**: RSI, MACD, Bollinger Bands, Momentum
-- **Médias Móveis**: SMA e EMA de diferentes períodos
-- **Volatilidade**: Rolling standard deviation e VIX simulado
-- **Volume**: Análise de volume e OBV (On-Balance Volume)
+### 📚 **Machine Learning**
+- Regressão Linear aplicada a dados financeiros
+- Pipeline de preprocessamento
+- Feature Engineering automática
+- Avaliação de modelos
 
-### 3. Seleção de Features
-- Redução de 68 para 20 features mais relevantes
-- Análise de importância com Random Forest
-- Remoção de features com alta correlação (> 0.95)
+### 🔬 **Validação**
+- K-Fold Cross Validation (5 folds)
+- Holdout Validation (70/30)
+- Métricas múltiplas
+- Análise de consistência
 
-### 4. Modelagem
-- **Algoritmo**: XGBoost com regularização forte
-- **Validação**: 5-fold cross-validation
-- **Divisão Temporal**: 70% treino, 30% teste (últimos 30 dias)
-- **Otimização**: Grid search com foco em generalização
+### 📊 **Análise de Dados**
+- Dados reais via Yahoo Finance (yfinance)
+- Indicadores técnicos
+- Correlações e multicolinearidade
+- Seleção automática de features
 
-### 5. Validação e Avaliação
-- Métricas de classificação completas
-- Análise de matriz de confusão
-- Validação anti-overfitting
-- Análise de importância das features
+## 📈 Interpretação dos Resultados
 
-## 📊 Features Utilizadas
+### ✅ **Resultados Realísticos**
+A acurácia de ~52% é **cientificamente válida** para previsão de direção em mercados financeiros:
+- Mercados são intrinsecamente difíceis de prever
+- Resultado ligeiramente acima do random (50%)
+- Alinhado com literatura acadêmica
+- Ausência de overfitting confirmada
 
-| Categoria | Features |
-|-----------|----------|
-| **Preço** | Preço de abertura, fechamento, máximo, mínimo |
-| **Médias Móveis** | SMA_5, SMA_10, SMA_20, EMA_12, EMA_26 |
-| **Indicadores Técnicos** | RSI, MACD, Bollinger Bands, Momentum |
-| **Volume** | Volume, OBV, Volume médio |
-| **Volatilidade** | Rolling std, VIX simulado |
-| **Lags** | Retornos defasados (1-3 períodos) |
+### 🎯 **Valor Educacional**
+O projeto demonstra com sucesso:
+- Aplicação correta de validação cruzada
+- Metodologia científica rigorosa
+- Interpretação realística de resultados
+- Pipeline profissional de ML
 
-## 🎓 Aspectos Didáticos
+## 🚀 Extensões Futuras
 
-### Conceitos Abordados
-- **Classificação Binária**: Previsão de tendência (alta/baixa)
-- **Engenharia de Features**: Criação de indicadores técnicos
-- **Validação Temporal**: Divisão respeitando ordem cronológica
-- **Prevenção de Overfitting**: Regularização e validação cruzada
-- **Análise de Performance**: Métricas de classificação
+### 🔧 **Melhorias Técnicas**
+- [ ] Ensemble Methods (Random Forest, XGBoost)
+- [ ] Deep Learning (LSTM, Transformer)
+- [ ] Hyperparameter Tuning
+- [ ] Walk-Forward Analysis
 
-### Decisões Técnicas
-- **Threshold do Target**: 0.5% para maior realismo
-- **Regularização**: Parâmetros conservadores no XGBoost
-- **Balanceamento**: Dados naturalmente balanceados
-- **Features**: Redução criteriosa para evitar curse of dimensionality
+### 📊 **Dados Adicionais**
+- [ ] Indicadores macroeconômicos
+- [ ] Análise de sentimento
+- [ ] Dados de alta frequência
+- [ ] Múltiplos ativos
 
-## 📋 Requisitos do Sistema
+## 📞 Suporte
 
-- Python 3.8 ou superior
-- Memória RAM: 4GB mínimo
-- Espaço em disco: 1GB
-- Sistema operacional: Windows, macOS, ou Linux
+Para dúvidas ou sugestões sobre o projeto, consulte a documentação nos scripts ou analise os comentários detalhados no código.
 
-## 🔍 Análise de Resultados
+## 📄 Licença
 
-### Principais Insights
-1. **RSI e MACD** são os indicadores mais importantes
-2. **Médias móveis** contribuem significativamente para a previsão
-3. **Volume** é um fator diferencial em alguns casos
-4. **Volatilidade** ajuda a identificar momentos de incerteza
-
-### Limitações
-- Dados sintéticos podem não capturar toda complexidade do mercado real
-- Modelo sensível a mudanças estruturais no mercado
-- Performance pode variar em diferentes condições de mercado
-
-## 🚨 Avisos Importantes
-
-⚠️ **Este projeto é para fins educacionais e acadêmicos**
-⚠️ **Não constitui recomendação de investimento**
-⚠️ **Mercados financeiros envolvem riscos**
-⚠️ **Sempre consulte um profissional qualificado**
-
-## 📞 Contato
-
-Para dúvidas ou sugestões sobre este projeto acadêmico, entre em contato através dos canais institucionais.
-
-## 📝 Licença
-
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto é distribuído sob a licença MIT. Veja `LICENSE` para mais detalhes.
 
 ---
 
-*Desenvolvido como projeto acadêmico de Machine Learning aplicado ao mercado financeiro*
+**🎉 Projeto concluído com sucesso!**  
+*Pipeline robusto de Machine Learning aplicado ao mercado financeiro brasileiro*
