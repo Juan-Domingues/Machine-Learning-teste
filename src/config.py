@@ -1,0 +1,22 @@
+# Configuração do projeto
+DEBUG = False
+RANDOM_STATE = 42
+
+# Parâmetros do dataset
+ANOS_HISTORICOS = 10
+DIAS_TESTE = 30
+
+# Parâmetros de features
+NUM_FEATURES_SELECIONADAS = 12
+THRESHOLD_MULTICOLINEARIDADE = 0.85
+
+# Parâmetros de validação
+NUM_FOLDS_CV = 5
+META_ACURACIA = 0.75
+
+# Parâmetros dos modelos
+ALPHA_RIDGE = 1.0
+ALPHA_LASSO = 0.01
+ALPHA_ELASTICNET = 0.01
+L1_RATIO_ELASTICNET = 0.5
+MAX_ITER = 2000
